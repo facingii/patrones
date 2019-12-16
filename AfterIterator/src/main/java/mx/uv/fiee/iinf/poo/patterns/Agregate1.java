@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 public class Agregate1 implements Agregate {
 
-    //
+    //almacén de valores enteros
     private ArrayList<Integer> list = new ArrayList<Integer>();
 
     /**
-     *
-     * @return
+     * devuelve un objeto iterador que conoce la estructura de la colección y puede recorrela
+     * @return nuevo objeto iterador
      */
     public Iterator createIterator () {
         return new Iterator1 ();
     }
 
     /**
-     *
-     * @param item
+     * agrega un elemento a la colección
+     * @param item elemento nuevo
      */
     public void add (int item) {
         list.add (item);
@@ -27,16 +27,16 @@ public class Agregate1 implements Agregate {
         int position = 0; //variable que mantiene la posición en la colección
 
         /**
-         *
-         * @return
+         * verifica si existen elementos en la colección que falte recorrer
+         * @return verdadero si existen elementos por recorrer, falso en caso contrario
          */
         public boolean hasNext () {
             return list.size () > 0 && position < list.size ();
         }
 
         /**
-         *
-         * @return
+         * extrae el último valor introducido a la colección
+         * @return valor almacenado
          */
         public Integer next () {
             Integer foo =  list.get (position);
