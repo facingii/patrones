@@ -2,6 +2,9 @@ package mx.uv.fiee.iinf.poo.patterns;
 
 /**
  * Concrete Collegue
+ *
+ * Hereda los atributos específicos de la clase abstracta User y a su vez define la lógica
+ * correspondiente a los métodos abstractos
  */
 public class ConcreteUser extends User {
 

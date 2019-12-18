@@ -3,8 +3,7 @@ package mx.uv.fiee.iinf.poo.patterns;
 import java.util.ArrayList;
 
 public class Agregate1 implements Agregate {
-
-    //almacén de valores enteros
+    //almacamiento de valores enteros
     private ArrayList<Integer> list = new ArrayList<Integer>();
 
     /**
@@ -23,6 +22,9 @@ public class Agregate1 implements Agregate {
         list.add (item);
     }
 
+    /**
+     * El interador se declara como inner class para poder acceder a la colección sin necesidad de más intefaces
+     */
     class Iterator1 implements Iterator {
         int position = 0; //variable que mantiene la posición en la colección
 
@@ -44,7 +46,5 @@ public class Agregate1 implements Agregate {
 
             return foo;
         }
-
     }
-
 }

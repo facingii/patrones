@@ -11,9 +11,9 @@ public class Snapshot implements IMemento {
     /**
      * crea la instantanea a partir del valor de los campos del objeto originator
      * se almacenan tipos básicos en lugar de tipos referencias complejos
-     * @param id
-     * @param name
-     * @param phone
+     * @param id Campo id
+     * @param name Campo name
+     * @param phone Campo phone
      */
     public Snapshot (String id, String name, String phone) {
         this.id  = id;

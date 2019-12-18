@@ -4,9 +4,9 @@ package mx.uv.fiee.iinf.poo.patterns;
  * Originator class
  */
 public class Student implements IOriginator {
-    public String id;
-    public String fullname;
-    public String phone;
+    public String id; //Student ID
+    public String fullname; //Student name
+    public String phone; //Student phone
 
     /**
      * Almacena el estado de los campos del objeto al crear una instantanea con dicha información

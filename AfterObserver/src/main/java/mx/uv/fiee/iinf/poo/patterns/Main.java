@@ -3,11 +3,11 @@ package mx.uv.fiee.iinf.poo.patterns;
 public class Main {
 
     public static void main (String [] args) {
-        MailingList ml = new MailingList();
-        Client client = new Client ();
+        MailingList ml = new MailingList (); //instancia a la lista de correo
+        Client client = new Client (); //instanacia al cliente
 
-        ml.attach (client);
-        Dispatcher.dispatch (ml);
+        ml.attach (client); //agrega al cliente a la lista de suscriptores
+        Dispatcher.dispatch (ml); //inicia la entrega de correos
     }
 }
 
