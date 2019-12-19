@@ -10,11 +10,11 @@ public class Main {
         ChatRoom chatRoom = new ConcreteChatRoom ();
 
         //Collegues
-        User user1 = new ConcreteUser(chatRoom, "1", "Dany");
-        User user2 = new ConcreteUser(chatRoom, "2", "John");
-        User user3 = new ConcreteUser(chatRoom, "3", "Tyrion");
-        User user4 = new ConcreteUser(chatRoom, "4", "Sansa");
-        User user5 = new ConcreteUser(chatRoom, "5", "Arya");
+        User user1 = new ConcreteUser (chatRoom, "1", "Dany");
+        User user2 = new ConcreteUser (chatRoom, "2", "John");
+        User user3 = new ConcreteUser (chatRoom, "3", "Tyrion");
+        User user4 = new ConcreteUser (chatRoom, "4", "Sansa");
+        User user5 = new ConcreteUser (chatRoom, "5", "Arya");
 
         //Se agregan los colegas a la colección del Mediator
         chatRoom.addUser (user1);
